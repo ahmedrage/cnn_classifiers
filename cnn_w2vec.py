@@ -35,8 +35,8 @@ classes = {"Software_Developer": 0, "Front_End_Developer": 1, "Network_Administr
            "Web_Developer": 3, "Project_manager": 4, "Database_Administrator": 5, "Security_Analyst": 6,
            "Systems_Administrator": 7, "Python_Developer": 8, "Java_Developer": 9}
 
-dataset_dir = 'E:/Thèse/datasets/dws/'
-models_dir = 'E:/Thèse/models/dws/'
+dataset_dir = '/content/drive/My Drive/ml_output_dir/'
+models_dir = '/content/drive/My Drive/resume_models/'
 curr_class = "Java_Developer"
 cv_height = 500
 
