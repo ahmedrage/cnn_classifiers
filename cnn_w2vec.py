@@ -102,7 +102,7 @@ for curr_class in classes :
     #model.add(layers.Flatten())
     model.add(layers.Dense(10, activation='relu'))
     model.add(layers.Dense(1, activation='sigmoid'))
-    sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.1, nesterov=True)
+    sgd = optimizers.SGD(learning_rate=0.01, weight_decay=1e-6, momentum=0.1, nesterov=True)
     model.compile(loss='binary_crossentropy',optimizer=sgd,metrics=['accuracy'])
 
     history = model.fit(X_train, y_train, epochs=100, verbose=True, validation_data=(X_test,y_test), batch_size=batch_size)
