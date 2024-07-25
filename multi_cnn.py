@@ -45,8 +45,8 @@ def loadDicModel(file):
 #from tp4 import curr_class
 cv_height = 500
 
-dataset_dir = 'E:/Thèse/datasets/no_tf_idf/'
-models_dir = 'E:/Thèse/models/tf_idf/'
+dataset_dir = '/content/drive/My Drive/ml_output_dir/'
+models_dir = '/content/drive/My Drive/resume_models/'
 
 classes = {"Software_Developer" : 0, "Front_End_Developer" : 1, "Network_Administrator": 2, "Web_Developer":3, "Project_manager": 4, "Database_Administrator": 5, "Security_Analyst": 6,
            "Systems_Administrator" : 7, "Python_Developer" : 8, "Java_Developer": 9}
