@@ -65,7 +65,7 @@ def build_multi_label_model() :
         loaded_model_json = json_file.read()
         json_file.close()
         model = model_from_json(loaded_model_json)
-        sgd = optimizers.SGD(lr=0.01, decay=1e-6, momentum=0.1, nesterov=True)
+        sgd = optimizers.SGD(learning_rate=0.01, weight_decay=1e-6, momentum=0.1, nesterov=True)
         model.compile(loss='binary_crossentropy', optimizer=sgd, metrics=['accuracy'])
         # load weights into new model
         model.load_weights(models_dir+str(cv_height)+'/' + label + '.h5')
